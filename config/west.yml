@@ -2,7 +2,7 @@ manifest:
   remotes:
     - name: moergo-sc
       url-base: https://github.com/moergo-sc
-  - name: urob
+    - name: urob
       url-base: https://github.com/urob
   projects:
     - name: zmk
