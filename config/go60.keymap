@@ -38,9 +38,13 @@
         arcane: arcane {
              compatible = "zmk,behavior-adaptive-key";
              #binding-cells = <0>;
-             bindings = <&sk LSHFT>;
+             bindings = <&kp N>;
              arc_eu { trigger-keys = <E>; max-prior-idle-ms = <500>; bindings = <&kp U>; };
+             arc_ue { trigger-keys = <U>; max-prior-idle-ms = <500>; bindings = <&kp E>; };
+             arc_rl { trigger-keys = <R>; max-prior-idle-ms = <500>; bindings = <&kp L>; };
+             arc_kt { trigger-keys = <K>; max-prior-idle-ms = <500>; bindings = <&kp T>; };
         };
+
         magic: magic {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -130,12 +134,12 @@
         compatible = "zmk,keymap";
         layer_Base {
             bindings = <
-            &kp EQUAL  &kp N1     &kp N2   &kp N3    &kp N4  &kp N5                                                      &kp N6    &kp N7     &kp N8    &kp N9    &kp N0           &kp MINUS
-              &kp TAB   &kp Q      &kp W    &kp E     &kp R   &kp T                                                       &kp Y     &kp U      &kp I     &kp O     &kp P            &kp BSLH
-              &kp ESC   &kp A      &kp S    &kp D     &kp F   &kp G                                                       &kp H     &kp J      &kp K     &kp L  &kp SEMI             &kp SQT
- &magic LAYER_Magic 0   &kp Z      &kp X    &kp C     &kp V   &kp B                                                       &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH          &keypad_td
+            &kp EQUAL  &kp N1     &kp N2   &kp N3    &kp N4  &kp N5                                                       &kp N6     &kp N7     &kp N8    &kp N9    &kp N0           &kp MINUS
+              &kp TAB   &kp V      &kp M    &kp L     &kp P   &kp T                                                       &kp B     &arcane      &kp U     &kp O     &kp Q            &kp BSLH
+              &kp ESC   &kp S      &kp T    &kp D     &kp Y   &kp G                                                       &kp F       &kp N      &kp E     &kp A     &kp I             &kp SQT
+ &magic LAYER_Magic 0   &kp X      &kp K    &kp G     &kp W   &kp B                                                       &kp N       &kp H  &kp COMMA   &kp DOT &kp SQUOT          &keypad_td
                                &kp GRAVE  &kp DEL  &kp BSPC                                                                      &kp LGUI   &kp LBKT  &kp RBKT
-                                                     &symbol_nav_td  &arcane      &kp LCTRL     &kp LALT  &kp SPACE  &mt RALT RET
+                                                     &symbol_nav_td  &kp SPACE      &kp LCTRL     &kp LALT  &kp SPACE  &sk LSFT &sk LGUI
             >;
         };
 
