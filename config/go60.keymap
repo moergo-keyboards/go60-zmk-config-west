@@ -35,6 +35,12 @@
     };
 
     behaviors {
+        arcane: arcane {
+             compatible = "zmk,behavior-adaptive-key";
+             #binding-cells = <0>;
+             bindings = <&sk LSHFT>;
+             arc_eu { trigger-keys = <E>; max-prior-idle-ms = <500>; bindings = <&kp U>; };
+        };
         magic: magic {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -129,7 +135,7 @@
               &kp ESC   &kp A      &kp S    &kp D     &kp F   &kp G                                                       &kp H     &kp J      &kp K     &kp L  &kp SEMI             &kp SQT
  &magic LAYER_Magic 0   &kp Z      &kp X    &kp C     &kp V   &kp B                                                       &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH          &keypad_td
                                &kp GRAVE  &kp DEL  &kp BSPC                                                                      &kp LGUI   &kp LBKT  &kp RBKT
-                                                     &symbol_nav_td  &kp LSHFT  &kp LCTRL     &kp LALT  &kp SPACE  &mt RALT RET
+                                                     &symbol_nav_td  &arcane      &kp LCTRL     &kp LALT  &kp SPACE  &mt RALT RET
             >;
         };
 
