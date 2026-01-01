@@ -107,7 +107,7 @@
             key-positions = <POS_RH_C2R4 POS_RH_C4R4>;
             bindings = <&ae>;
         };
-    }    
+    };
 };
 
 / {
