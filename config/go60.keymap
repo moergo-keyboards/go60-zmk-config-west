@@ -136,10 +136,10 @@
             bindings = <
             &kp EQUAL  &kp N1     &kp N2   &kp N3    &kp N4  &kp N5                                                       &kp N6     &kp N7     &kp N8    &kp N9    &kp N0    &kp MINUS
               &kp TAB   &kp V      &kp M    &kp L     &kp C   &kp P                                                       &kp B     &arcane      &kp U     &kp O     &kp Q     &kp BSLH
-              &kp ESC   &kp S      &kp T    &kp R     &kp D   &kp Y                                                       &kp F       &kp N      &kp E     &kp A     &kp I      &kp SQT
+              &kp ESC   &kp S      &kp T    &kp N     &kp D   &kp Y                                                       &kp F       &kp N      &kp E     &kp A     &kp I      &kp SQT
  &magic LAYER_Magic 0   &kp X      &kp K    &kp J     &kp G   &kp W                                                       &kp X       &kp H  &kp COMMA   &kp DOT   &kp SQT   &keypad_td
                                &kp GRAVE  &kp DEL  &kp BSPC                                                                        &kp LGUI   &kp LBKT  &kp RBKT
-                                                   &kp SPACE &symbol_nav_td &kp LCTRL              &kp LALT  &kp SPACE  &sk LSFT  &sk LGUI
+                                                   &kp SPACE &symbol_nav_td &kp LCTRL              &kp LALT  &kp SPACE  &sk LSFT  &kp SPACE
             >;
         };
 
