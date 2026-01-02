@@ -96,6 +96,8 @@
             bindings = <&kp RET>;
         };
 
+
+
         // cmb_oe
         combo_cmb_oe {
             key-positions = <POS_RH_C2R2 POS_RH_C3R2>;
@@ -214,6 +216,43 @@
                 = <&out OUT_BLE>,
                   <&bt BT_SEL 3>;
         };
+                // oe
+        oe: oe {
+            label = "&OE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt RALT>
+                , <&kp O>
+                , <&kt RALT>;
+        };
+
+        // ae
+        ae: ae {
+            label = "&AE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk RALT>
+                , <&kp A>;
+        };
+
+        // ue
+        ue: ue {
+            label = "&UE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk RALT>
+                , <&kp U>;
+        };
+
+        // sz
+        sz: sz {
+            label = "&SZ";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk RALT>
+                , <&kp S>;
+        };
+
     };
 
     keymap {
